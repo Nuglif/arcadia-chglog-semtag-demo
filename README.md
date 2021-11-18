@@ -62,7 +62,7 @@ semtag final -s patch
 ```
 
 The weakness here is that _semtag_ will only derive new versions based on 
-the highest semantic version tag in the current branch, if that's not
+the highest semantic version tag in the whole repository. If that's not
 what you need, you will have to apply your special version tag manually.
 
 > A small tip, you can preview what tag would be applied by adding the `-o`
