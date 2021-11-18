@@ -37,7 +37,8 @@ The `final` command indicates that you want to create a tag like this:
 indicates that you want to increment the patch level version number.
 
 > Warning, _semtag_ doesn't tag _final_ versions if there are no new 
-commits since the last version, or if there are unstaged changes. 
+> commits since the last version, and will not tag anything if there are
+> unstaged or uncommitted changes. 
 
 
 ### Scenario 2: A git Repo With at Least One Tag Already
@@ -61,6 +62,12 @@ semtag final -s patch
 ```
 
 The weakness here is that _semtag_ will only derive new versions based on 
-the highest semantic version tag in the current branch, if that's not
+the highest semantic version tag in the whole repository. If that's not
 what you need, you will have to apply your special version tag manually.
 
+> A small tip, you can preview what tag would be applied by adding the `-o`
+> switch, for example `semtag final -s minor -o`.
+
+----
+
+Charle Demers, November 2021.
