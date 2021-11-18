@@ -68,3 +68,6 @@ what you need, you will have to apply your special version tag manually.
 > A small tip, you can preview what tag would be applied by adding the `-o`
 > switch, for example `semtag final -s minor -o`.
 
+----
+
+Charle Demers, November 2021.
