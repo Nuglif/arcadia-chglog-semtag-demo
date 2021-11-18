@@ -64,3 +64,6 @@ The weakness here is that _semtag_ will only derive new versions based on
 the highest semantic version tag in the current branch, if that's not
 what you need, you will have to apply your special version tag manually.
 
+> A small tip, you can preview what tag would be applied by adding the `-o`
+> switch, for example `semtag final -s minor -o`.
+
