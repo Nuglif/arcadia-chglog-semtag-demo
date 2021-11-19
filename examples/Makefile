@@ -22,5 +22,8 @@ CHANGELOG.md:
 tag:
 	semtag final -s minor
 
+README.md:
+	terraform-docs markdown . > README.md
+
 clean:
-	rm -f CHANGELOG.md
+	rm -f README.md CHANGELOG.md
